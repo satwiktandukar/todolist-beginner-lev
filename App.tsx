@@ -20,7 +20,7 @@ function App() {
   }
 
   const [select, setSelect] = useState(-1);
-  let index_glob = -1;
+  let index_glob: number;
 
   const [input, setInputTask] = useState("");
   const handleInputChange = (event: any) => {
@@ -68,7 +68,7 @@ function App() {
       <button
         className="btn btn-primary"
         onClick={() => {
-          Delete(index_glob);
+          Delete(select);
         }}
       >
         MarkDone
